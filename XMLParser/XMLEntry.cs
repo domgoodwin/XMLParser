@@ -58,7 +58,7 @@ namespace XMLParser
 
         public override string ToString()
         {
-            return String.Format("Ele:{0}, Atr{1}, Text{2}, XPath{3}", this.Element, this.Attributes, this.Text, this.XPath);
+            return String.Format("Ele: {0}, Atr: {1}, Text: {2}, XPath: {3}", this.Element, this.Attributes, this.Text, this.XPath);
         }
 
     }
