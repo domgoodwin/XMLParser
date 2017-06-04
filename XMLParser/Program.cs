@@ -33,6 +33,8 @@ namespace XMLParser
                 Console.WriteLine(item.ToString());
             }
 
+            Console.WriteLine(func.GetCYMinusX(1));
+
             Console.ReadLine();
         }
 

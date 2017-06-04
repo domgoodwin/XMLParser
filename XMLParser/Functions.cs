@@ -12,6 +12,24 @@ namespace XMLParser
 {
     class Functions
     {
+        public string GenerateDMSResponse()
+        {
+            return "";
+        }
+
+        public string GetCYMinusXNPS(int minusAmount)
+        {
+            int curYear = DateTime.Now.Year;
+            curYear -= minusAmount;
+            return String.Format("{0} / {1}", curYear.ToString(), (curYear + 1).ToString().Substring(2));
+        }
+        public string GetCYMinusX(int minusAmount)
+        {
+            int curYear = DateTime.Now.Year;
+            curYear -= minusAmount;
+            return String.Format("{0}/{1}", curYear.ToString().Substring(2), (curYear + 1).ToString().Substring(2));
+        }
+
         public List<XMLEntry> entries = new List<XMLEntry>();
 
         public List<XMLEntry> ProcessXML(string rawXML)
